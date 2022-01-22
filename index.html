@@ -1,0 +1,117 @@
+  <!-- 
+    =========================================================================
+    Nome do Projeto: Carrinho de Compras em Javascript
+    Finalidade: Cursos de Informática do IFSP campus Caraguatatuba 
+    Fonte Base: Projetos do Curso B7Web - https://b7web.com.br/ 
+    Autor: Denny Paulista Azevedo Filho
+    License: MIT License
+    ========================================================================= 
+  -->
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Carrinho Compra em JavaScript</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Rafael Soares baseado na video aula de MD Cursos, Denny Azevedo">
+      <meta name="keywords" content="web, curso web, css, html, js, javascript">
+      <meta name="description" content="Desenvolvimento WEB - Treinamento e aperfeiçoamento">
+      <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+      <!-- Modelos para clonagem e inclusão na área de exibição -->
+      <div class="models">
+          <div class="models-item">
+              <a href="">
+                  <div class="models-item--img"><img src="" /></div>
+                  <div class="models-item--add">+</div>
+              </a>
+              <div class="models-item--price">R$ --</div>
+              <div class="models-item--name">--</div>
+              <div class="models-item--desc">--</div>
+          </div>
+          <div class="cart--item">
+              <img src="" />
+              <div class="cart--item-nome">--</div>
+              <div class="cart--item--qtarea">
+                  <button class="cart--item-qtmenos">-</button>
+                  <div class="cart--item--qt">1</div>
+                  <button class="cart--item-qtmais">+</button>
+              </div>
+          </div>
+      </div>
+      <header>
+          <div class="menu-openner">
+              <span>0</span>
+              <span class="material-icons">shopping_cart</span>
+          </div>
+      </header>
+      <main>
+          <h1>DaFruta</h1>
+          <div class="models-area"></div>
+      </main>
+      <aside>
+          <div class="cart--area">
+              <div class="menu-closer">
+                  <span class="material-icons">close</span>
+              </div>
+              <h1>Meu Carrinho</h1>
+              <div class="cart"></div>
+              <div class="cart--details">
+                  <div class="cart--totalitem subtotal">
+                      <span>Subtotal</span>
+                      <span>R$ --</span>
+                  </div>
+                  <div class="cart--totalitem total big">
+                      <span>Total</span>
+                      <span>R$ --</span>
+                  </div>
+                  <div class="cart--finalizar">Finalizar a compra</div>
+              </div>
+          </div>
+      </aside>
+      <div class="modelsWindowArea">
+          <div class="modelsWindowBody">
+              <!-- 
+                  Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
+                  da janela modal vai ser igual, logo vamos fazer uma função
+              -->
+              <div class="modelsInfo--cancelMobileButton">Voltar</div>
+              <div class="modelsBig">
+                  <img src="" />
+              </div>
+              <div class="modelsInfo">
+                  <h1>--</h1>
+                  <div class="modelsInfo--desc">--</div>
+                  <div class="modelsInfo--sizearea">
+                      <div class="modelsInfo--sector">Kg</div>
+                      <div class="modelsInfo--sizes">
+                          <div data-key="0" class="modelsInfo--size selected">1kg <span>--</span></div>
+                          <div data-key="1" class="modelsInfo--size">5kg <span>--</span></div>
+                          <div data-key="2" class="modelsInfo--size">10kg <span>--</span></div>
+                      </div>
+                  </div>
+                  <div class="modelsInfo--pricearea">
+                      <div class="modelsInfo--sector">Preço</div>
+                      <div class="modelsInfo--price">
+                          <div class="modelsInfo--actualPrice">R$ --</div>
+                          <div class="modelsInfo--qtarea">
+                              <button class="modelsInfo--qtmenos">-</button>
+                              <div class="modelsInfo--qt">1</div>
+                              <button class="modelsInfo--qtmais">+</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+                  <div class="modelsInfo--cancelButton">Voltar ao Carrinho</div>
+              </div>
+          </div>
+      </div>
+  
+      <script type="text/javascript" src="js/models.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+  </body>
+  </html>
